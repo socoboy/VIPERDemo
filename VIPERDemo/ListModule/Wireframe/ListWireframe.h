@@ -6,8 +6,11 @@
 //  Copyright © 2016 GEM. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ListModule.h"
 
 @protocol ListWireframe <NSObject>
+
+@property (nonatomic, strong) id<ListPresenter> presenter;
+@property (nonatomic, weak) UIViewController *view;
 
 @end

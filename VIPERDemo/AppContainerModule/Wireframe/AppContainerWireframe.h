@@ -11,12 +11,8 @@
 @protocol AppContainerWireframe <NSObject>
 
 @property (nonatomic, strong) id<AppContainerPresenter> presenter;
+@property (nonatomic, weak) UIViewController *view;
 
 - (void)installModuleToWindow:(UIWindow *)window;
-
-- (void)presentListAccountModuleInsideView:(UIView *)view;
-- (void)presentListContactModuleInsideView:(UIView *)view;
-- (void)presentDetailAccountModuleInsideView:(UIView *)view withID:(NSString *)accountId;
-- (void)presentDetailContactModuleInsideView:(UIView *)view withId:(NSString *)contactId;
 
 @end

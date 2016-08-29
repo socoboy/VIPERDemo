@@ -15,10 +15,12 @@
 @protocol AppContainerWireframe;
 @protocol AppContainerPresenter;
 @protocol AppContainerView;
+@protocol AppContainerViewModel;
 @protocol AppContainerInteractor;
 
 #import "AppContainerWireframe.h"
 #import "AppContainerView.h"
+#import "AppContainerViewModel.h"
 #import "AppContainerPresenter.h"
 #import "AppContainerInteractor.h"
 

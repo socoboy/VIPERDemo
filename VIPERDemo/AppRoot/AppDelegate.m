@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DemoAppDependencyManager.h"
+#import "DemoAppContainerWireframe.h"
 
 @interface AppDelegate ()
 
@@ -22,12 +22,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    id<AppContainerWireframe> appContainerWireframe = [DemoAppDependencyManager appContainerModule];
+    id<AppContainerWireframe> appContainerWireframe = [DemoAppContainerWireframe new];
     [appContainerWireframe installModuleToWindow:self.window];
     
     self.appContainerWireframe = appContainerWireframe;
     
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

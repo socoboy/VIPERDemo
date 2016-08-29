@@ -6,8 +6,11 @@
 //  Copyright © 2016 GEM. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ListModule.h"
 
 @protocol ListView <NSObject>
+
+@property (nonatomic, weak) id<ListPresenter> presenter;
+@property (nonatomic, weak) id<ListViewModel> viewModel;
 
 @end

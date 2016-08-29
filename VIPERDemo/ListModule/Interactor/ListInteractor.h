@@ -6,8 +6,10 @@
 //  Copyright © 2016 GEM. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ListModule.h"
 
 @protocol ListInteractor <NSObject>
+
+@property (nonatomic, weak) id<ListPresenter> presenter;
 
 @end

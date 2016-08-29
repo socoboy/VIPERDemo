@@ -11,50 +11,33 @@
 @implementation DemoAppContainerViewController
 
 @synthesize presenter = _presenter;
+@synthesize viewModel = _viewModel;
 
 #pragma mark + Life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.presenter presentListAccountModuleToView:self.listContainer];
-    
-    self.accountBtn.selected = YES;
-    self.contactBtn.selected = NO;
+    [self.presenter viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+    
+    [self.presenter viewWillAppear];
 }
 
 #pragma mark + View Protocol
-- (void)drawOnWindow:(UIWindow *)window {
-    window.rootViewController = self;
+- (void)reloadViewWithUpdatedState {
+    self.accountBtn.selected = [self.viewModel isAccountMode];
+    self.contactBtn.selected = [self.viewModel isContactMode];
 }
 
 #pragma mark + IBAction
 - (void)accountBtnAction:(id)sender {
-    if (!self.accountBtn.selected) {
-        self.accountBtn.selected = YES;
-        [self.presenter presentListAccountModuleToView:self.listContainer];
-    }
+    [self.presenter switchToAccountModeIfNeed];
 }
 
 - (void)contactBtnAction:(id)sender {
-    if (!self.contactBtn.selected) {
-        self.contactBtn.selected = YES;
-        [self.presenter presentListContactModuleToView:self.listContainer];
-    }
+    [self.presenter switchToContactModeIfNeed];
 }
 @end

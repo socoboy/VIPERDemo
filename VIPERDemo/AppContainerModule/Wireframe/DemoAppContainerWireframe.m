@@ -15,12 +15,13 @@
 @implementation DemoAppContainerWireframe
 
 @synthesize presenter = _presenter;
+@synthesize view = _view;
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        id<AppContainerView> view = [DemoAppContainerViewController new];
+        UIViewController<AppContainerView> *view = [DemoAppContainerViewController new];
         id<AppContainerPresenter> presenter = [DemoAppContainerPresenter new];
         id<AppContainerInteractor> interactor = [DemoAppContainerInteractor new];
         
@@ -32,12 +33,14 @@
         interactor.presenter = presenter;
         
         _presenter = presenter;
+        _view = view;
     }
     return self;
 }
 
 - (void)installModuleToWindow:(UIWindow *)window {
-    [self.presenter installViewToWindow:window];
+    window.rootViewController = self.view;
+    [window makeKeyAndVisible];
 }
 
 @end

@@ -11,7 +11,7 @@
 @protocol AppContainerView <NSObject>
 
 @property (nonatomic, weak) id<AppContainerPresenter> presenter;
+@property (nonatomic, weak) id<AppContainerViewModel> viewModel;
 
-- (void)drawOnWindow:(UIWindow *)window;
-
+- (void)reloadViewWithUpdatedState;
 @end
