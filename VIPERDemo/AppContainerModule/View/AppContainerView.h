@@ -14,4 +14,5 @@
 @property (nonatomic, weak) id<AppContainerViewModel> viewModel;
 
 - (void)reloadViewWithUpdatedState;
+- (UIView *)listViewContainer;
 @end

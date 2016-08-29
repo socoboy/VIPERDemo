@@ -14,5 +14,6 @@
 @property (nonatomic, weak) UIViewController *view;
 
 - (void)installModuleToWindow:(UIWindow *)window;
-
+- (void)initAndPresentListAccountInsideView:(UIView *)containerView
+                             fromController:(UIViewController *)containerController;
 @end

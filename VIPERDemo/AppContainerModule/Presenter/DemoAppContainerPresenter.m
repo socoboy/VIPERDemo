@@ -38,7 +38,10 @@
     [self.view reloadViewWithUpdatedState];
     
     // call wireframe to load list account module
-#warning PENDING
+    // Get place to show-up list account view
+    UIView *listViewContainer = [self.view listViewContainer];
+    [self.wireframe initAndPresentListAccountInsideView:listViewContainer
+                                         fromController:self.view];
 }
 
 - (void)viewWillAppear {

@@ -32,6 +32,10 @@
     self.contactBtn.selected = [self.viewModel isContactMode];
 }
 
+- (UIView *)listViewContainer {
+    return self.listContainer;
+}
+
 #pragma mark + IBAction
 - (void)accountBtnAction:(id)sender {
     [self.presenter switchToAccountModeIfNeed];
