@@ -40,8 +40,7 @@
     // call wireframe to load list account module
     // Get place to show-up list account view
     UIView *listViewContainer = [self.view listViewContainer];
-    [self.wireframe initAndPresentListAccountInsideView:listViewContainer
-                                         fromController:self.view];
+    [self.wireframe presentListAccountInsideView:listViewContainer];
 }
 
 - (void)viewWillAppear {

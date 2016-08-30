@@ -12,10 +12,23 @@
 #import "DemoAppContainerPresenter.h"
 #import "DemoAppContainerInteractor.h"
 
+#import "ListAccountWireframe.h"
+
+@interface DemoAppContainerWireframe ()
+
+- (void)insertViewController:(UIViewController *)viewController
+               intoContainer:(UIView *)viewContainer
+                ofController:(UIViewController *)containerController;
+
+@end
+
 @implementation DemoAppContainerWireframe
 
 @synthesize presenter = _presenter;
 @synthesize view = _view;
+
+@synthesize listAccountWireframe = _listAccountWireframe;
+@synthesize listContactWireframe = _listContactWireframe;
 
 - (instancetype)init
 {
@@ -42,5 +55,22 @@
     window.rootViewController = self.view;
     [window makeKeyAndVisible];
 }
+
+- (void)presentListAccountInsideView:(UIView *)containerView {
+    self.listAccountWireframe = [ListAccountWireframe new];
+    [self.listAccountWireframe prepareViewController];
+    
+    [self insertViewController:self.listAccountWireframe.view
+                 intoContainer:containerView
+                  ofController:self.view];
+}
+
+- (void)insertViewController:(UIViewController *)viewController
+               intoContainer:(UIView *)viewContainer
+                ofController:(UIViewController *)containerController {
+    [viewContainer addSubview:viewController.view];
+    
+}
+
 
 @end

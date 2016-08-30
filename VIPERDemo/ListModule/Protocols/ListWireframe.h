@@ -13,4 +13,5 @@
 @property (nonatomic, strong) id<ListPresenter> presenter;
 @property (nonatomic, weak) UIViewController *view;
 
+- (void)prepareViewController;
 @end

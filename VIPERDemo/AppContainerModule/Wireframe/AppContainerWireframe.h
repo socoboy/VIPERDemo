@@ -7,13 +7,16 @@
 //
 
 #import "AppContainerModule.h"
+#import "ListModule.h"
 
 @protocol AppContainerWireframe <NSObject>
 
 @property (nonatomic, strong) id<AppContainerPresenter> presenter;
 @property (nonatomic, weak) UIViewController *view;
 
+@property (nonatomic, strong) id<ListWireframe> listAccountWireframe;
+@property (nonatomic, strong) id<ListWireframe> listContactWireframe;
+
 - (void)installModuleToWindow:(UIWindow *)window;
-- (void)initAndPresentListAccountInsideView:(UIView *)containerView
-                             fromController:(UIViewController *)containerController;
+- (void)presentListAccountInsideView:(UIView *)containerView;
 @end

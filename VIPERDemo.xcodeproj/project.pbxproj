@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5E3044B5B6108889E2B2CA /* libPods-VIPERDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4707886A20050BC123243649 /* libPods-VIPERDemo.a */; };
 		D61E0D561D6EE6C700DAC26D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E0D551D6EE6C700DAC26D /* main.m */; };
 		D61E0D5F1D6EE6C700DAC26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61E0D5D1D6EE6C700DAC26D /* Main.storyboard */; };
 		D61E0D621D6EE6C700DAC26D /* VIPERDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D61E0D601D6EE6C700DAC26D /* VIPERDemo.xcdatamodeld */; };
@@ -24,15 +25,23 @@
 		D61E0DB81D6FBD0200DAC26D /* DemoAppContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E0DB71D6FBD0200DAC26D /* DemoAppContainerViewController.m */; };
 		D61E0DC01D6FDA7500DAC26D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E0DBC1D6FDA7500DAC26D /* AppDelegate.m */; };
 		D61E0DC31D6FDEA200DAC26D /* DemoAppContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61E0DC21D6FDEA200DAC26D /* DemoAppContainerViewController.xib */; };
-		D6F668131D7288DE00192E24 /* ListAccountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668121D7288DE00192E24 /* ListAccountInteractor.m */; };
-		D6F668191D72890700192E24 /* ListAccountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668181D72890700192E24 /* ListAccountPresenter.m */; };
-		D6F6681C1D72892100192E24 /* ListAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6681B1D72892100192E24 /* ListAccountViewController.m */; };
-		D6F6681F1D72893000192E24 /* ListAccountWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6681E1D72893000192E24 /* ListAccountWireframe.m */; };
 		D6F668241D73428E00192E24 /* DemoAppContainerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668231D73428E00192E24 /* DemoAppContainerViewModel.m */; };
-		D6F668291D73433F00192E24 /* ListAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668281D73433F00192E24 /* ListAccountViewModel.m */; };
+		D6F668411D74F86300192E24 /* ListAccountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668341D74F86300192E24 /* ListAccountInteractor.m */; };
+		D6F668421D74F86300192E24 /* ListAccountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668371D74F86300192E24 /* ListAccountPresenter.m */; };
+		D6F668431D74F86300192E24 /* ListAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6683A1D74F86300192E24 /* ListAccountViewController.m */; };
+		D6F668441D74F86300192E24 /* ListAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6683D1D74F86300192E24 /* ListAccountViewModel.m */; };
+		D6F668451D74F86300192E24 /* ListAccountWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668401D74F86300192E24 /* ListAccountWireframe.m */; };
+		D6F668561D74F87300192E24 /* ListContactInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668491D74F87300192E24 /* ListContactInteractor.m */; };
+		D6F668571D74F87300192E24 /* ListContactPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6684C1D74F87300192E24 /* ListContactPresenter.m */; };
+		D6F668581D74F87300192E24 /* ListContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6684F1D74F87300192E24 /* ListContactViewController.m */; };
+		D6F668591D74F87300192E24 /* ListContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668521D74F87300192E24 /* ListContactViewModel.m */; };
+		D6F6685A1D74F87300192E24 /* ListContactWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F668551D74F87300192E24 /* ListContactWireframe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4707886A20050BC123243649 /* libPods-VIPERDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPERDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		516679E5E17EF0BD650EE455 /* Pods-VIPERDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C5907DB2733FD8F84D0A2057 /* Pods-VIPERDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D61E0D511D6EE6C700DAC26D /* VIPERDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61E0D551D6EE6C700DAC26D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D61E0D5E1D6EE6C700DAC26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,10 +65,6 @@
 		D61E0D9A1D6F018300DAC26D /* AppContainerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContainerPresenter.h; sourceTree = "<group>"; };
 		D61E0D9B1D6F019400DAC26D /* AppContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContainerView.h; sourceTree = "<group>"; };
 		D61E0D9C1D6F01C100DAC26D /* AppContainerWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContainerWireframe.h; sourceTree = "<group>"; };
-		D61E0D9D1D6F01F900DAC26D /* ListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListInteractor.h; sourceTree = "<group>"; };
-		D61E0D9E1D6F020600DAC26D /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
-		D61E0D9F1D6F024600DAC26D /* ListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPresenter.h; sourceTree = "<group>"; };
-		D61E0DA01D6F024F00DAC26D /* ListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListWireframe.h; sourceTree = "<group>"; };
 		D61E0DA11D6F025A00DAC26D /* DetailInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInteractor.h; sourceTree = "<group>"; };
 		D61E0DA21D6F026500DAC26D /* DetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPresenter.h; sourceTree = "<group>"; };
 		D61E0DA31D6F026F00DAC26D /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
@@ -77,20 +82,34 @@
 		D61E0DBC1D6FDA7500DAC26D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D61E0DC21D6FDEA200DAC26D /* DemoAppContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoAppContainerViewController.xib; sourceTree = "<group>"; };
 		D6F668101D72883C00192E24 /* ListModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListModule.h; sourceTree = "<group>"; };
-		D6F668111D7288DE00192E24 /* ListAccountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountInteractor.h; sourceTree = "<group>"; };
-		D6F668121D7288DE00192E24 /* ListAccountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountInteractor.m; sourceTree = "<group>"; };
-		D6F668171D72890700192E24 /* ListAccountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountPresenter.h; sourceTree = "<group>"; };
-		D6F668181D72890700192E24 /* ListAccountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountPresenter.m; sourceTree = "<group>"; };
-		D6F6681A1D72892100192E24 /* ListAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountViewController.h; sourceTree = "<group>"; };
-		D6F6681B1D72892100192E24 /* ListAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountViewController.m; sourceTree = "<group>"; };
-		D6F6681D1D72893000192E24 /* ListAccountWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountWireframe.h; sourceTree = "<group>"; };
-		D6F6681E1D72893000192E24 /* ListAccountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountWireframe.m; sourceTree = "<group>"; };
 		D6F668211D73428E00192E24 /* AppContainerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContainerViewModel.h; sourceTree = "<group>"; };
 		D6F668221D73428E00192E24 /* DemoAppContainerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppContainerViewModel.h; sourceTree = "<group>"; };
 		D6F668231D73428E00192E24 /* DemoAppContainerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppContainerViewModel.m; sourceTree = "<group>"; };
-		D6F668261D73431800192E24 /* ListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
-		D6F668271D73433F00192E24 /* ListAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountViewModel.h; sourceTree = "<group>"; };
-		D6F668281D73433F00192E24 /* ListAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountViewModel.m; sourceTree = "<group>"; };
+		D6F6682C1D74F84D00192E24 /* ListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListInteractor.h; sourceTree = "<group>"; };
+		D6F6682D1D74F84D00192E24 /* ListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPresenter.h; sourceTree = "<group>"; };
+		D6F6682E1D74F84D00192E24 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		D6F6682F1D74F84D00192E24 /* ListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
+		D6F668301D74F84D00192E24 /* ListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListWireframe.h; sourceTree = "<group>"; };
+		D6F668331D74F86300192E24 /* ListAccountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountInteractor.h; sourceTree = "<group>"; };
+		D6F668341D74F86300192E24 /* ListAccountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountInteractor.m; sourceTree = "<group>"; };
+		D6F668361D74F86300192E24 /* ListAccountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountPresenter.h; sourceTree = "<group>"; };
+		D6F668371D74F86300192E24 /* ListAccountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountPresenter.m; sourceTree = "<group>"; };
+		D6F668391D74F86300192E24 /* ListAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountViewController.h; sourceTree = "<group>"; };
+		D6F6683A1D74F86300192E24 /* ListAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountViewController.m; sourceTree = "<group>"; };
+		D6F6683C1D74F86300192E24 /* ListAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountViewModel.h; sourceTree = "<group>"; };
+		D6F6683D1D74F86300192E24 /* ListAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountViewModel.m; sourceTree = "<group>"; };
+		D6F6683F1D74F86300192E24 /* ListAccountWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAccountWireframe.h; sourceTree = "<group>"; };
+		D6F668401D74F86300192E24 /* ListAccountWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAccountWireframe.m; sourceTree = "<group>"; };
+		D6F668481D74F87300192E24 /* ListContactInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactInteractor.h; sourceTree = "<group>"; };
+		D6F668491D74F87300192E24 /* ListContactInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactInteractor.m; sourceTree = "<group>"; };
+		D6F6684B1D74F87300192E24 /* ListContactPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactPresenter.h; sourceTree = "<group>"; };
+		D6F6684C1D74F87300192E24 /* ListContactPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactPresenter.m; sourceTree = "<group>"; };
+		D6F6684E1D74F87300192E24 /* ListContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactViewController.h; sourceTree = "<group>"; };
+		D6F6684F1D74F87300192E24 /* ListContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactViewController.m; sourceTree = "<group>"; };
+		D6F668511D74F87300192E24 /* ListContactViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactViewModel.h; sourceTree = "<group>"; };
+		D6F668521D74F87300192E24 /* ListContactViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactViewModel.m; sourceTree = "<group>"; };
+		D6F668541D74F87300192E24 /* ListContactWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactWireframe.h; sourceTree = "<group>"; };
+		D6F668551D74F87300192E24 /* ListContactWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactWireframe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,17 +117,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5E3044B5B6108889E2B2CA /* libPods-VIPERDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5510F19008A302517736BBF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5907DB2733FD8F84D0A2057 /* Pods-VIPERDemo.debug.xcconfig */,
+				516679E5E17EF0BD650EE455 /* Pods-VIPERDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D61E0D481D6EE6C700DAC26D = {
 			isa = PBXGroup;
 			children = (
 				D61E0D531D6EE6C700DAC26D /* VIPERDemo */,
 				D61E0D521D6EE6C700DAC26D /* Products */,
+				5510F19008A302517736BBF0 /* Pods */,
+				DB774B703D3B0BC63A6C2E2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				D6F668101D72883C00192E24 /* ListModule.h */,
-				D61E0D761D6EFDC700DAC26D /* Interactor */,
-				D61E0D751D6EFDBB00DAC26D /* View */,
-				D6F668251D73429900192E24 /* ViewModel */,
-				D61E0D741D6EFDA400DAC26D /* Presenter */,
-				D61E0D731D6EFD8E00DAC26D /* Wireframe */,
+				D6F6682B1D74F7E500192E24 /* Protocols */,
+				D6F668311D74F86300192E24 /* ListAccount */,
+				D6F668461D74F87300192E24 /* ListContact */,
 			);
 			path = ListModule;
 			sourceTree = "<group>";
@@ -182,46 +211,6 @@
 				D61E0D911D6F011100DAC26D /* Interactor */,
 			);
 			path = AppContainerModule;
-			sourceTree = "<group>";
-		};
-		D61E0D731D6EFD8E00DAC26D /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				D61E0DA01D6F024F00DAC26D /* ListWireframe.h */,
-				D6F6681D1D72893000192E24 /* ListAccountWireframe.h */,
-				D6F6681E1D72893000192E24 /* ListAccountWireframe.m */,
-			);
-			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		D61E0D741D6EFDA400DAC26D /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				D61E0D9F1D6F024600DAC26D /* ListPresenter.h */,
-				D6F668171D72890700192E24 /* ListAccountPresenter.h */,
-				D6F668181D72890700192E24 /* ListAccountPresenter.m */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D61E0D751D6EFDBB00DAC26D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D61E0D9E1D6F020600DAC26D /* ListView.h */,
-				D6F6681A1D72892100192E24 /* ListAccountViewController.h */,
-				D6F6681B1D72892100192E24 /* ListAccountViewController.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D61E0D761D6EFDC700DAC26D /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				D61E0D9D1D6F01F900DAC26D /* ListInteractor.h */,
-				D6F668111D7288DE00192E24 /* ListAccountInteractor.h */,
-				D6F668121D7288DE00192E24 /* ListAccountInteractor.m */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		D61E0D771D6EFDDA00DAC26D /* Core */ = {
@@ -390,14 +379,138 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		D6F668251D73429900192E24 /* ViewModel */ = {
+		D6F6682B1D74F7E500192E24 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D6F668261D73431800192E24 /* ListViewModel.h */,
-				D6F668271D73433F00192E24 /* ListAccountViewModel.h */,
-				D6F668281D73433F00192E24 /* ListAccountViewModel.m */,
+				D6F6682C1D74F84D00192E24 /* ListInteractor.h */,
+				D6F6682D1D74F84D00192E24 /* ListPresenter.h */,
+				D6F6682E1D74F84D00192E24 /* ListView.h */,
+				D6F6682F1D74F84D00192E24 /* ListViewModel.h */,
+				D6F668301D74F84D00192E24 /* ListWireframe.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D6F668311D74F86300192E24 /* ListAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668321D74F86300192E24 /* Interactor */,
+				D6F668351D74F86300192E24 /* Presenter */,
+				D6F668381D74F86300192E24 /* View */,
+				D6F6683B1D74F86300192E24 /* ViewModel */,
+				D6F6683E1D74F86300192E24 /* Wireframe */,
+			);
+			path = ListAccount;
+			sourceTree = "<group>";
+		};
+		D6F668321D74F86300192E24 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668331D74F86300192E24 /* ListAccountInteractor.h */,
+				D6F668341D74F86300192E24 /* ListAccountInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D6F668351D74F86300192E24 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668361D74F86300192E24 /* ListAccountPresenter.h */,
+				D6F668371D74F86300192E24 /* ListAccountPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6F668381D74F86300192E24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668391D74F86300192E24 /* ListAccountViewController.h */,
+				D6F6683A1D74F86300192E24 /* ListAccountViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6F6683B1D74F86300192E24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6F6683C1D74F86300192E24 /* ListAccountViewModel.h */,
+				D6F6683D1D74F86300192E24 /* ListAccountViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6F6683E1D74F86300192E24 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D6F6683F1D74F86300192E24 /* ListAccountWireframe.h */,
+				D6F668401D74F86300192E24 /* ListAccountWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D6F668461D74F87300192E24 /* ListContact */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668471D74F87300192E24 /* Interactor */,
+				D6F6684A1D74F87300192E24 /* Presenter */,
+				D6F6684D1D74F87300192E24 /* View */,
+				D6F668501D74F87300192E24 /* ViewModel */,
+				D6F668531D74F87300192E24 /* Wireframe */,
+			);
+			path = ListContact;
+			sourceTree = "<group>";
+		};
+		D6F668471D74F87300192E24 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668481D74F87300192E24 /* ListContactInteractor.h */,
+				D6F668491D74F87300192E24 /* ListContactInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D6F6684A1D74F87300192E24 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D6F6684B1D74F87300192E24 /* ListContactPresenter.h */,
+				D6F6684C1D74F87300192E24 /* ListContactPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6F6684D1D74F87300192E24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6F6684E1D74F87300192E24 /* ListContactViewController.h */,
+				D6F6684F1D74F87300192E24 /* ListContactViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6F668501D74F87300192E24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668511D74F87300192E24 /* ListContactViewModel.h */,
+				D6F668521D74F87300192E24 /* ListContactViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6F668531D74F87300192E24 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D6F668541D74F87300192E24 /* ListContactWireframe.h */,
+				D6F668551D74F87300192E24 /* ListContactWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		DB774B703D3B0BC63A6C2E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4707886A20050BC123243649 /* libPods-VIPERDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +520,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D61E0D6B1D6EE6C700DAC26D /* Build configuration list for PBXNativeTarget "VIPERDemo" */;
 			buildPhases = (
+				97805085D5D8EF8B7C84AEFB /* [CP] Check Pods Manifest.lock */,
 				D61E0D4D1D6EE6C700DAC26D /* Sources */,
 				D61E0D4E1D6EE6C700DAC26D /* Frameworks */,
 				D61E0D4F1D6EE6C700DAC26D /* Resources */,
+				631765453FFB69F854D25F94 /* [CP] Embed Pods Frameworks */,
+				0934B976C4C9052611F8ACBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -466,29 +582,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0934B976C4C9052611F8ACBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631765453FFB69F854D25F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERDemo/Pods-VIPERDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97805085D5D8EF8B7C84AEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D61E0D4D1D6EE6C700DAC26D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F668451D74F86300192E24 /* ListAccountWireframe.m in Sources */,
 				D61E0D8D1D6F007700DAC26D /* AccountAPIService.m in Sources */,
-				D6F668191D72890700192E24 /* ListAccountPresenter.m in Sources */,
-				D6F6681F1D72893000192E24 /* ListAccountWireframe.m in Sources */,
 				D61E0D7E1D6EFF4900DAC26D /* ContactAPIService.m in Sources */,
+				D6F668421D74F86300192E24 /* ListAccountPresenter.m in Sources */,
 				D61E0D841D6F003600DAC26D /* ContactModel.m in Sources */,
 				D61E0DB81D6FBD0200DAC26D /* DemoAppContainerViewController.m in Sources */,
 				D61E0DB51D6FBCE800DAC26D /* DemoAppContainerPresenter.m in Sources */,
-				D6F6681C1D72892100192E24 /* ListAccountViewController.m in Sources */,
 				D61E0D811D6EFF6B00DAC26D /* ContactDBStore.m in Sources */,
+				D6F668431D74F86300192E24 /* ListAccountViewController.m in Sources */,
 				D6F668241D73428E00192E24 /* DemoAppContainerViewModel.m in Sources */,
+				D6F668581D74F87300192E24 /* ListContactViewController.m in Sources */,
+				D6F668561D74F87300192E24 /* ListContactInteractor.m in Sources */,
+				D6F668591D74F87300192E24 /* ListContactViewModel.m in Sources */,
 				D61E0D621D6EE6C700DAC26D /* VIPERDemo.xcdatamodeld in Sources */,
 				D61E0DC01D6FDA7500DAC26D /* AppDelegate.m in Sources */,
-				D6F668291D73433F00192E24 /* ListAccountViewModel.m in Sources */,
 				D61E0D901D6F00D500DAC26D /* AccountDBStore.m in Sources */,
-				D6F668131D7288DE00192E24 /* ListAccountInteractor.m in Sources */,
+				D6F668411D74F86300192E24 /* ListAccountInteractor.m in Sources */,
 				D61E0D561D6EE6C700DAC26D /* main.m in Sources */,
 				D61E0DAF1D6FBC8500DAC26D /* DemoAppContainerWireframe.m in Sources */,
 				D61E0D881D6F005300DAC26D /* AccountModel.m in Sources */,
+				D6F6685A1D74F87300192E24 /* ListContactWireframe.m in Sources */,
+				D6F668441D74F86300192E24 /* ListAccountViewModel.m in Sources */,
+				D6F668571D74F87300192E24 /* ListContactPresenter.m in Sources */,
 				D61E0DB21D6FBCDD00DAC26D /* DemoAppContainerInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +770,7 @@
 		};
 		D61E0D6C1D6EE6C700DAC26D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5907DB2733FD8F84D0A2057 /* Pods-VIPERDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VIPERDemo/Info.plist;
@@ -613,6 +783,7 @@
 		};
 		D61E0D6D1D6EE6C700DAC26D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516679E5E17EF0BD650EE455 /* Pods-VIPERDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VIPERDemo/Info.plist;
