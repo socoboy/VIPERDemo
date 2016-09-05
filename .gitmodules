@@ -1,0 +1,4 @@
+[submodule ".spacecommander"]
+	path = .spacecommander
+	url = git@github.com:socoboy/spacecommander.git
+	branch = GEM
