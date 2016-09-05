@@ -13,8 +13,13 @@
 #import "DemoAppContainerInteractor.h"
 
 #import "ListAccountWireframe.h"
+#import "ListContactWireframe.h"
+
+#import <Masonry.h>
 
 @interface DemoAppContainerWireframe ()
+
+- (void)removeControllerFromContainerController:(UIViewController *)childController;
 
 - (void)insertViewController:(UIViewController *)viewController
                intoContainer:(UIView *)viewContainer
@@ -44,20 +49,23 @@
         
         view.presenter = presenter;
         interactor.presenter = presenter;
-        
         _presenter = presenter;
         _view = view;
     }
     return self;
 }
 
+#pragma mark + Wireframe protocols
 - (void)installModuleToWindow:(UIWindow *)window {
     window.rootViewController = self.view;
     [window makeKeyAndVisible];
 }
 
 - (void)presentListAccountInsideView:(UIView *)containerView {
-    self.listAccountWireframe = [ListAccountWireframe new];
+    if (!self.listAccountWireframe) {
+        self.listAccountWireframe = [ListAccountWireframe new];
+    }
+    
     [self.listAccountWireframe prepareViewController];
     
     [self insertViewController:self.listAccountWireframe.view
@@ -65,12 +73,55 @@
                   ofController:self.view];
 }
 
+
+- (void)presentListContactInsideView:(UIView *)containerView {
+    if (!self.listContactWireframe) {
+        self.listContactWireframe = [ListContactWireframe new];
+    }
+    
+    [self.listContactWireframe prepareViewController];
+    
+    [self insertViewController:self.listContactWireframe.view
+                 intoContainer:containerView
+                  ofController:self.view];
+}
+
+- (void)hideAccountModules {
+    [self removeControllerFromContainerController:self.listAccountWireframe.view];
+#warning PENDING remove detail module
+}
+
+- (void)hideContactModules {
+    [self removeControllerFromContainerController:self.listContactWireframe.view];
+#warning PENDING remove detail module
+}
+
+- (void)reloadAccountModules {
+    [self.listAccountWireframe reloadModule];
+    #warning PENDING reload detail module
+}
+
+- (void)reloadContactModules {
+    [self.listContactWireframe reloadModule];
+#warning PENDING reload detail module
+}
+
+#pragma mark + Internal methods
 - (void)insertViewController:(UIViewController *)viewController
                intoContainer:(UIView *)viewContainer
                 ofController:(UIViewController *)containerController {
-    [viewContainer addSubview:viewController.view];
-    
+    if (viewController) {
+        [viewContainer addSubview:viewController.view];
+        [viewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(viewContainer);
+        }];
+        [containerController addChildViewController:viewController];
+    }
 }
 
+- (void)removeControllerFromContainerController:(UIViewController *)childController {
+    [childController.view removeFromSuperview];
+    [childController removeFromParentViewController];
+}
 
 @end

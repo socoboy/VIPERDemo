@@ -9,6 +9,13 @@
 #import "DemoAppContainerPresenter.h"
 #import "DemoAppContainerViewModel.h"
 
+@interface DemoAppContainerPresenter ()
+
+- (void)presentAccountList;
+- (void)presentContactList;
+
+@end
+
 @implementation DemoAppContainerPresenter
 
 @synthesize view = _view;
@@ -16,19 +23,7 @@
 @synthesize wireframe = _wireframe;
 @synthesize viewModel = _viewModel;
 
-- (void)initViewState {
-    DemoAppContainerViewModel *viewModel = [DemoAppContainerViewModel new];
-    // default is account mode
-    viewModel.accountMode = YES;
-    
-    // set view model to view
-    self.viewModel = viewModel;
-    self.view.viewModel = viewModel;
-    
-    // call reload state
-    [self.view reloadViewWithUpdatedState];
-}
-
+#pragma mark + Presenter protocols
 - (void)viewDidLoad {
     DemoAppContainerViewModel *viewModel = [DemoAppContainerViewModel new];
     viewModel.accountMode = YES;
@@ -38,16 +33,14 @@
     [self.view reloadViewWithUpdatedState];
     
     // call wireframe to load list account module
-    // Get place to show-up list account view
-    UIView *listViewContainer = [self.view listViewContainer];
-    [self.wireframe presentListAccountInsideView:listViewContainer];
+    [self presentAccountList];
 }
 
 - (void)viewWillAppear {
     if ([self.viewModel isContactMode]) {
-#warning PENDING - Call wireframe to ask list contact module and contact detail to reload datas
+        [self.wireframe reloadContactModules];
     } else {
-#warning PENDING - Call wireframe to ask list account module and account detail to reload datas
+        [self.wireframe reloadAccountModules];
     }
 }
 
@@ -56,7 +49,8 @@
         [self.viewModel setAccountMode:YES];
         [self.view reloadViewWithUpdatedState];
         
-#warning PENDING - Call wireframe to load list account and detail account modules and hide list contact modules
+        [self.wireframe hideContactModules];
+        [self presentAccountList];
     }
 }
 
@@ -65,8 +59,22 @@
         [self.viewModel setContactMode:YES];
         [self.view reloadViewWithUpdatedState];
         
-#warning PENDING - Call wireframe to load list contact and detail contact modules and hide list account modules
+        [self.wireframe hideAccountModules];
+        [self presentContactList];
     }
 }
 
+#pragma mark + Internal
+- (void)presentAccountList {
+    // Get place to show-up list account view
+    UIView *listViewContainer = [self.view listViewContainer];
+    // Present list account into list container
+    [self.wireframe presentListAccountInsideView:listViewContainer];
+}
+
+- (void)presentContactList {
+    // Get place to show-up list contact view
+    UIView *listViewContainer = [self.view listViewContainer];
+    [self.wireframe presentListContactInsideView:listViewContainer];
+}
 @end

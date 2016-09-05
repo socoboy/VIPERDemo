@@ -18,5 +18,14 @@
 @property (nonatomic, strong) id<ListWireframe> listContactWireframe;
 
 - (void)installModuleToWindow:(UIWindow *)window;
+
+- (void)hideAccountModules;
+- (void)hideContactModules;
+
 - (void)presentListAccountInsideView:(UIView *)containerView;
+- (void)presentListContactInsideView:(UIView *)containerView;
+
+- (void)reloadAccountModules;
+- (void)reloadContactModules;
+
 @end
