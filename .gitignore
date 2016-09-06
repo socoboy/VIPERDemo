@@ -59,3 +59,8 @@ fastlane/screenshots
 
 iOSInjectionProject/
 .clang-format
+.oclint
+analysis_script.sh
+compile_commands.json
+report.html
+.rules
